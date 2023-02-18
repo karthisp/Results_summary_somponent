@@ -53,12 +53,12 @@ body {
 }
 
 .overview-heading {
-    font-size:20px;
+    font-size: 20px;
 }
 
-.overview-heading, 
+.overview-heading,
 .overview-comments {
-    color:#c6c6c6;
+    color: #c6c6c6;
 }
 
 .overview-og-score {
@@ -79,10 +79,14 @@ body {
     font-weight: 800;
 }
 
-.score-out-off{
+.score-out-off,
+.result-type-score {
     color: rgb(179, 179, 179);
 }
 
+.result-type-score {
+    font-weight: 700;
+}
 
 .overview-comments-sec {
     /* border:1px solid red; */
@@ -92,4 +96,83 @@ body {
 .overview-reaction {
     font-size: 30px;
     margin-bottom: 15px;
+}
+
+/* results summary sectin */
+
+.result-summary-inner {
+    /* border:1px solid red; */
+    /* remove height */
+    height: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.summary-heading,
+.results-breakdown {
+    margin: 30px 0px;
+}
+
+.result-type {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0;
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+
+.icon-container {
+    display: flex;
+    width: 35%;
+    column-gap: 10px;
+}
+
+.red {
+    background: hsla(0, 100%, 67%, 0.1);
+}
+
+.red .icon-container {
+    color: hsl(0, 100%, 67%)
+} 
+
+.yellow {
+    background: hsla(39, 100%, 56%, 0.1);
+}
+
+.yellow .icon-container {
+    color: hsl(39, 100%, 56%);
+}
+
+.green {
+    background: hsla(166, 100%, 37%, 0.1);
+}
+
+.green .icon-container {
+    color:hsla(166, 100%, 37%)
+}
+
+.blue {
+    background: hsla(234, 85%, 45%, 0.1);
+}
+
+.blue .icon-container {
+    color:hsla(234, 85%, 45%);
+}
+
+.result-type-score .result-type-actual-score {
+    color: black;
+}
+
+/* button */
+
+.continue-btn {
+    width: 100%;
+    padding:15px 10px;
+    border-radius: 25px;
+    background:hsl(224, 30%, 27%);
+    color:white;
+    border:none;
+    font-weight: 700;
+    font-size:20px;
 }
