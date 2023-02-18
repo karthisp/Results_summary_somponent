@@ -23,7 +23,8 @@ body {
     display: flex;
     box-shadow: 15px 15px 30px hsl(221, 100%, 96%);
     border-radius: 30px;
-
+    /* border:1px solid black; */
+    max-width:650px;
 }
 
 .overview,
@@ -175,4 +176,13 @@ body {
     border:none;
     font-weight: 700;
     font-size:20px;
+}
+
+/* media queries */
+
+@media (max-width:650px) {
+    .main-container {
+        flex-direction: column;
+        max-width: 450px
+    }
 }
